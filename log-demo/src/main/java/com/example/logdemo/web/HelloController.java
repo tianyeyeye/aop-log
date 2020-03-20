@@ -14,7 +14,7 @@ public class HelloController {
     @ControllerLog(module = OperateModule.Order, opType = OperateType.menu)
     @GetMapping("/hello")
     public String hello() {
-        return "Hi " + LocalDateTime.now();
+        return "Hi:" + LocalDateTime.now();
     }
 
 }
